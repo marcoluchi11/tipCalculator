@@ -14,18 +14,47 @@
   </head>
   <body>
     <div class="container">
-      <h4>Calculadora de Propinas</h4>
-      <p>De cuanto fue la cuenta</p>
-      <input type="text" />
+      <h3>Calculadora de Propinas</h3>
+      <p>Ingrese el valor total de la cuenta</p>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Importe</span
+          >
+        </div>
+        <input
+          id="importe"
+          type="text"
+          class="form-control"
+          aria-label="Default"
+          aria-describedby="inputGroup-sizing-default"
+          placeholder="Ingrese el importe aqui"
+        />
+      </div>
       <p>Califica como fue el servicio</p>
-      <select name="" id="">
-        <option value="">Bueno</option>
-        <option value="">Malo</option>
+      <select id="calificaciones" class="form-control form-control-sm">
+        <option value="5">Excelente </option>
+        <option value="4">Bueno</option>
+        <option value="3">Regular</option>
+        <option value="2">Malo</option>
+        <option value="1">Muy Malo</option>
       </select>
       <p>Cuantas personas son</p>
-      <input type="text" />
-
-      <button class="btn btn-danger">CALCULAR</button>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">#</span>
+        </div>
+        <input
+          id="cantidad"
+          type="text"
+          class="form-control"
+          placeholder="Ingrese la cantidad de personas aqui"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+      <button id="btn" class="btn btn-danger">CALCULAR</button>
+      <section id="propina"></section>
     </div>
   </body>
 </html>
