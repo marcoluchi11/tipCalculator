@@ -32,13 +32,13 @@ let calcularPropina = () => {
       break;
   }
 
-  return valorFinal;
+  return Math.round(valorFinal);
 };
 
 btn.addEventListener("click", () => {
   borrarHijos();
   if (calcularPropina()) {
-    let propina = document.createElement("h5");
+    let propina = document.createElement("h4");
 
     propina.textContent =
       "La propina es de $ " + calcularPropina() + " por persona";
