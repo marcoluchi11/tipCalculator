@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="container">
-      <h3>Calculadora de Propinas</h3>
-      <p>Ingrese el valor total de la cuenta</p>
-      <div class="input-group mb-3">
+      <h2>Calculadora de Propinas</h2>
+      <p>Ingresa el valor total de la cuenta</p>
+      <div class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroup-sizing-default"
             >Importe</span
@@ -28,19 +28,24 @@
           class="form-control"
           aria-label="Default"
           aria-describedby="inputGroup-sizing-default"
-          placeholder="Ingrese el importe aqui"
+          placeholder="Ingrese el importe aquí"
         />
       </div>
-      <p>Califica como fue el servicio</p>
+      <p>Contanos como fue el servicio</p>
       <select id="calificaciones" class="form-control form-control-sm">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Importe</span
+          >
+        </div>
         <option value="5">Excelente </option>
         <option value="4">Bueno</option>
         <option value="3">Regular</option>
         <option value="2">Malo</option>
         <option value="1">Muy Malo</option>
       </select>
-      <p>Cuantas personas son</p>
-      <div class="input-group mb-3">
+      <p>¿Cuantas personas son?</p>
+      <div id="ultimoInput" class="input-group">
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1">#</span>
         </div>
@@ -48,13 +53,33 @@
           id="cantidad"
           type="number"
           class="form-control"
-          placeholder="Ingrese la cantidad de personas aqui"
+          placeholder="Ingrese la cantidad de personas aquí"
           aria-label="Username"
           aria-describedby="basic-addon1"
         />
       </div>
-      <button id="btn" class="btn btn-danger">CALCULAR</button>
+      <div class="cajaquecontiene">
+        <button id="btn" class="btn btn-danger btn-lg">Calcular</button>
+      </div>
+
       <section id="propina"></section>
+
+      <footer class="">
+        <a
+          href="https://cafecito.app/marcoluchi11"
+          rel="noopener"
+          target="_blank"
+          ><img
+            srcset="
+              https://cdn.cafecito.app/imgs/buttons/button_5.png       0.7x,
+              https://cdn.cafecito.app/imgs/buttons/button_5_2x.png    2x,
+              https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x
+            "
+            src="https://cdn.cafecito.app/imgs/buttons/button_5.png"
+            alt="Invitame un café en cafecito.app"
+        /></a>
+        <p>2020 ©</p>
+      </footer>
     </div>
   </body>
 </html>
