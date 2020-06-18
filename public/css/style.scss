@@ -1,3 +1,15 @@
+@media all and (max-width: 374px) {
+  #btn {
+    font-size: 20px !important;
+    margin-bottom: 40px !important;
+  }
+  footer {
+    img {
+      height: 25px;
+      width: 75px;
+    }
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(43, 38, 38);
@@ -21,6 +33,9 @@ h2 {
   text-align: center;
   padding-bottom: 15px;
 }
+h4 {
+  margin-top: 15px;
+}
 p {
   font-weight: 300;
   font-size: 1.5em;
@@ -41,4 +56,9 @@ p {
 footer {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+  p {
+    font-size: 0.9em;
+    padding-top: 10px;
+  }
 }
